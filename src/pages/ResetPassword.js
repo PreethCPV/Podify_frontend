@@ -12,12 +12,9 @@ const ResetPassword = () => {
   Axios.defaults.withCredentials = true;
   const handleSubmit = (e) => {
     e.preventDefault();
-    Axios.post(
-      "https://podify-backend-1.onrender.com/auth/resetPassword" + token,
-      {
-        password,
-      }
-    )
+    Axios.post("podify-backend-2.vercel.app/auth/resetPassword" + token, {
+      password,
+    })
       .then((response) => {
         if (response.data.status) {
           alert("Check your email for the reset password link");

@@ -19,7 +19,7 @@ const Login = () => {
     e.preventDefault();
     setLoading(true);
     setError("");
-    Axios.post("https://podify-backend-1.onrender.com/auth/login", {
+    Axios.post("podify-backend-2.vercel.app/auth/login", {
       email,
       password,
     })

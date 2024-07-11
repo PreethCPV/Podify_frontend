@@ -8,7 +8,7 @@ const Profile = () => {
 
   useEffect(() => {
     axios
-      .get("https://podify-backend-1.onrender.com/auth/profile")
+      .get("podify-backend-2.vercel.app/auth/profile")
       .then((response) => {
         console.log(response.data);
         setProfileData(response.data.data); // Assuming data structure matches backend response
