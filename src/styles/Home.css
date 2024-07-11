@@ -1,0 +1,92 @@
+.home {
+  text-align: center;
+  padding-top: 60px; /* To ensure content is not hidden under the fixed navbar */
+}
+
+.podify-title {
+  margin: 20px 0;
+}
+
+.home {
+  text-align: center;
+}
+
+.podify-name {
+  background: linear-gradient(90deg, #ff8a00, #e52e71);
+  color: white;
+  padding: 20px;
+  font-family: "Arial Black", sans-serif;
+  font-size: 3em;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
+}
+
+.podify-title h1 {
+  font-size: 3em;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.slideshow {
+  height: 300px;
+  margin-bottom: 50px;
+}
+
+.slideshow .carousel-item img {
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.slideshow .carousel-item:hover img {
+  transform: scale(1.1);
+}
+
+.slideshow .carousel-caption {
+  transition: color 0.5s ease;
+}
+
+.slideshow .carousel-item:hover .carousel-caption h3,
+.slideshow .carousel-item:hover .carousel-caption p {
+  color: #ff7e5f;
+}
+
+.new-releases {
+  background: #ff8a00;
+  padding: 20px;
+}
+
+.new-releases h2 {
+  margin-bottom: 20px;
+}
+
+.card-deck {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 18rem;
+  transition: transform 0.5s ease, box-shadow 0.5s ease, background 0.5s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(to bottom right, #00c6ff, #0072ff);
+}
+
+.card:hover .card-title,
+.card:hover .card-text {
+  font-weight: bold;
+}
+
+.card img {
+  height: 200px;
+  object-fit: cover;
+}

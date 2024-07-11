@@ -1,0 +1,21 @@
+.aboutus-container {
+  background-color: #f0f8ff;
+  color: #333;
+  padding: 50px;
+  margin: 20px auto;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.aboutus-container h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #4a90e2;
+}
+
+.aboutus-container p {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
