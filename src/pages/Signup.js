@@ -12,7 +12,7 @@ const Signup = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("podify-backend-2.vercel.app/auth/signup", {
+      .post("https://podify-backend-1.onrender.com/auth/signup", {
         username,
         email,
         password,

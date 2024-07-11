@@ -8,7 +8,7 @@ const Navbar = () => {
   axios.defaults.withCredentials = true;
   const handleLogout = () => {
     axios
-      .get("podify-backend-2.vercel.app/auth/logout")
+      .get("https://podify-backend-1.onrender.com/auth/logout")
       .then((res) => {
         if (res.data.status) {
           navigate("/login");
@@ -25,7 +25,7 @@ const Navbar = () => {
   // Fetch user data when component mounts
   React.useEffect(() => {
     axios
-      .get("podify-backend-2.vercel.app/auth/profile")
+      .get("https://podify-backend-1.onrender.com/auth/profile")
       .then((res) => {
         setUsers(res.data);
         setLoading(false);

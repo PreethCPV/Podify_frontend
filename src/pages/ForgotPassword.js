@@ -11,7 +11,7 @@ const ForgotPassword = () => {
   Axios.defaults.withCredentials = true;
   const handleSubmit = (e) => {
     e.preventDefault();
-    Axios.post("podify-backend-2.vercel.app/auth/forgotPassword", {
+    Axios.post("https://podify-backend-1.onrender.com/auth/forgotPassword", {
       email,
     })
       .then((response) => {
